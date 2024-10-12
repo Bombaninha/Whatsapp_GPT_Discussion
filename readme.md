@@ -28,48 +28,19 @@ Here are the technologies used in this project.
 
 1. Install Dependencies (Gems)
 
-
 ```bash
 bundle install
 ```
 
-2. Install Google Chrome
-
-Check if Google Chrome is installed:
+2. Check if Google Chrome is installed
 
 ```bash
 google-chrome --version
 ```
 
-If not installed, follow these steps:
+If not installed, follow these [steps](CHROME_DRIVER_INSTALLATION.md)
 
-  - Download the latest stable version of Google Chrome:
-
-  ```bash
-  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-  ```
-
-  - Install the downloaded `.deb` package:
-
-  ```bash
-  sudo dpkg -i google-chrome-stable_current_amd64.deb
-  sudo apt-get install -f
-
-  ```
-
-  - Clean up by removing the downloaded package:
-
-  ```bash
-  rm google-chrome-stable_current_amd64.deb
-  ```
-
-3. Copy the binary path and change the `CHROME_BIN` env variable value. You can obtain it from:
-
-```bash
-which google-chrome
-```
-
-4. Start File
+3. Start File
 
 ```bash
 ruby ./whatsapp_bot.rb
