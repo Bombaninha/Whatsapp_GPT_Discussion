@@ -26,12 +26,54 @@ Here are the technologies used in this project.
 
 ## Getting started
 
-* Install gems
->    $ bundle install
+1. Install Dependencies (Gems)
 
-* Start File
->    $ ruby ./whatsapp_bot.rb
 
+```bash
+bundle install
+```
+
+2. Install Google Chrome
+
+Check if Google Chrome is installed:
+
+```bash
+google-chrome --version
+```
+
+If not installed, follow these steps:
+
+  - Download the latest stable version of Google Chrome:
+
+  ```bash
+  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  ```
+
+  - Install the downloaded `.deb` package:
+
+  ```bash
+  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  sudo apt-get install -f
+
+  ```
+
+  - Clean up by removing the downloaded package:
+
+  ```bash
+  rm google-chrome-stable_current_amd64.deb
+  ```
+
+3. Copy the binary path and change the `CHROME_BIN` env variable value. You can obtain it from:
+
+```bash
+which google-chrome
+```
+
+4. Start File
+
+```bash
+ruby ./whatsapp_bot.rb
+```
 
 ## Links
   - Repository: https://github.com/Lucasdfg07/Whatsapp_GPT_Discussion
